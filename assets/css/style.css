@@ -20,7 +20,7 @@ h3 {
 	color: grey;
 }
 
-h1, h3, #magicNumber, #totalScore, #wins, #losses {
+h1, h3, #magicNumber, #totalScore, #wins, #losses, .score {
 	color: #5073aa;
 }
 
@@ -36,7 +36,7 @@ h1 {
 	margin-left: 55px;
 }
 
-.directions, .score {
+.directions {
 	color: grey;
 	text-align: center;
 }
@@ -44,8 +44,9 @@ h1 {
 .score {
 	padding-top: 30px;
 	margin-bottom: 0;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: 3px;
 }
 
 .directions {
@@ -53,7 +54,7 @@ h1 {
 }
 
 #winOrLose {
-	color: #ff59fc;
+	color: #a182bc;
 }
 
 .total {
@@ -66,7 +67,7 @@ h1 {
 
 .btn {
 	margin-top: 30px;
-	color: #ff59fc;
+	color: #a182bc;
 	letter-spacing: 3px;
 }
 
