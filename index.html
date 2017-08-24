@@ -19,11 +19,7 @@
 	</div>
 	
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 directions">
-				<p>These crystals each have a hidden value that will only be revealed when clicked. With each click, you will add the crystal's value to your total score. You will win the game if your total score matches the magic number, and you will lose if your total score exceeds it. Good luck.</p>
-			</div>
-		</div>
+		
 		<div class="row">
 			<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 				<img class="crystalimg img-responsive" id="crystal1" src="assets/images/crystal1.png" alt="Crystal 1"/>
@@ -38,12 +34,25 @@
 				<img class="crystalimg img-responsive" id="crystal4" src="assets/images/crystal4.png" alt="Crystal 4"/>
 			</div>
 		</div>
+
 		<div class="row">
-			<div class="col-lg-12 scores text-center">
+			<div class="col-lg-12 directions">
+				<p>These crystals each have a hidden value that will only be revealed when clicked. With each click, you will add the crystal's value to your total score. You will win the game if your total score matches the magic number, and you will lose if your total score exceeds it. Good luck.</p>
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<div class="col-lg-4 total">
 				<h3>TOTAL SCORE:</h3>
 				<h3 id="totalScore"></h3>
-				<br/>
-				<span class="score">Wins: <span id="wins"></span></span> <span class="score">Losses: <span id="losses"></span></span>
+			</div>
+			<div class="col-lg-4 button">
+				<h3 id="winOrLose"></h3>
+				<button type="button" class="btn btn-light btn-lg">PLAY AGAIN</button>
+			</div>
+			<div class="col-lg-4 scores">
+				<p class="score">Wins: <span id="wins"></span></p> 
+				<p class="score">Losses: <span id="losses"></span></p>
 			</div>
 		</div>
 	</div>

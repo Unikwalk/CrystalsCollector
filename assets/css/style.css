@@ -3,7 +3,6 @@ html {
 }
 
 body { 
-	width:100%; 
 	min-height: 100vh;
     background: url("../images/geobackground.png");
     background-size: cover;
@@ -12,12 +11,12 @@ body {
 }
 
 h3 {
-	margin: 0px 0px 10px 0px;
+	margin: 20px 0px 10px 0px;
 	letter-spacing: 3px;
 }
 
 .header {
-	padding: 60px 0px 0px 0px;
+	padding: 70px 0px 0px 0px;
 	color: grey;
 }
 
@@ -28,11 +27,7 @@ h1, h3, #magicNumber, #totalScore, #wins, #losses {
 h1 {
 	color: black;
 	margin: 55px 0px 75px 0px;
-	letter-spacing: 10px;
-}
-
-#magicnumber {
-	border: solid 2px grey;
+	letter-spacing: 12px;
 }
 
 .crystalimg {
@@ -41,19 +36,39 @@ h1 {
 	margin-left: 55px;
 }
 
-.directions, .scores {
+.directions, .score {
 	color: grey;
 	text-align: center;
+}
+
+.score {
+	padding-top: 30px;
+	margin-bottom: 0;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .directions {
 	padding: 20px 85px;
 }
 
-.scores {
-	padding: 30px 0px 60px 0px;
+#winOrLose {
+	color: #ff59fc;
 }
 
-.score {
-	margin: 70px;
+.total {
+	padding-left: 70px;
 }
+
+.scores {
+	padding-right: 70px;
+}
+
+.btn {
+	margin-top: 30px;
+	color: #ff59fc;
+	letter-spacing: 3px;
+}
+
+
+

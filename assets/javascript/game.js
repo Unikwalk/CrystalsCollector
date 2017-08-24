@@ -27,9 +27,24 @@ $(document).ready(function() {
 		$("#crystal4").attr("data-crystalvalue", crystal4Num);
 		$("#wins").text(wins);
 		$("#losses").text(losses);
+		$("#winOrLose").text("");
 
-		console.log(crystal1Num, crystal2Num, crystal3Num, crystal4Num);
+		//console.log(crystal1Num, crystal2Num, crystal3Num, crystal4Num);
 	}
+
+	function youWin() {
+		$("#winOrLose").text("YOU WIN!");
+		wins++;
+		$("#wins").text(wins);
+	}
+
+	function youLose() {
+		$("#winOrLose").text("YOU LOSE");
+		losses++;
+		$("#losses").text(losses);
+	}
+
+	newGame();
 
 	$(".crystalimg").hover(function() {
 		$(this).css({opacity: 0.3});
@@ -38,5 +53,26 @@ $(document).ready(function() {
 		$(this).css({opacity: 1});
 	});
 
-	newGame();
+	// Function to add the crystal values together
+	$(".crystalimg").on("click", function() {
+		if (totalScore >= magicNumber) {
+			return;
+		}
+
+		var crystalValue = $(this).attr("data-crystalvalue");
+		crystalValue = parseInt(crystalValue);
+		totalScore += crystalValue;
+		$("#totalScore").text(totalScore);
+
+		if (totalScore === magicNumber) {
+			youWin();
+		} else if (totalScore > magicNumber) {
+			youLose();
+		}
+	});
+
+	$(".btn").on("click", function() {
+		newGame();
+	});
+
 });
